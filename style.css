@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff8e1;
+  color: #000;
+}
+
+header {
+  background-color: #f5f5dc;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: #f5f5dc;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-nav button {
+  flex: 1;
+  padding: 12px 0;
+  background: none;
+  border: none;
+  font-size: 1em;
+}
+
+.page {
+  display: none;
+  padding: 20px;
+  margin-bottom: 60px; /* space for bottom nav */
+}
+
+.page.active {
+  display: block;
+}
+
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 2em;
+  margin: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.links a {
+  margin-right: 10px;
+  color: #000;
+}
+
+.social-links a {
+  margin-right: 10px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App2Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="splash" class="page">
+    <div class="splash-content">
+      <h1 class="logo">App2Converter</h1>
+      <p>La beauté à portée d’application</p>
+    </div>
+  </div>
+
+  <header id="top-bar">Accueil</header>
+  <main>
+    <section id="home" class="page active">
+      <img src="https://via.placeholder.com/300x200" alt="Institut cosy" class="banner">
+      <p>Bienvenue dans notre institut de beauté.</p>
+      <button id="view-services">Voir nos prestations</button>
+      <nav class="links">
+        <a href="#" data-page="about">À propos</a>
+        <a href="#" data-page="faq">FAQ</a>
+        <a href="#" data-page="legal">Mentions légales</a>
+        <a href="#" data-page="social">Réseaux sociaux</a>
+      </nav>
+    </section>
+
+    <section id="services" class="page">
+      <h2>Nos Prestations</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Beauté des mains">
+          <h3>Beauté des mains</h3>
+          <p>Soin complet pour des mains sublimes.</p>
+          <p class="price">30&nbsp;€</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Beauté du regard">
+          <h3>Beauté du regard</h3>
+          <p>Mettez vos yeux en valeur.</p>
+          <p class="price">40&nbsp;€</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="Make-Up">
+          <h3>Make-Up</h3>
+          <p>Maquillage professionnel pour toutes les occasions.</p>
+          <p class="price">50&nbsp;€</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150" alt="LPG">
+          <h3>LPG</h3>
+          <p>Soin minceur et fermeté.</p>
+          <p class="price">35&nbsp;€</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <h2>À propos</h2>
+      <img src="https://via.placeholder.com/300x200" alt="Notre institut">
+      <p>App2Converter est un institut dédié à votre beauté et votre bien-être.</p>
+    </section>
+
+    <section id="reviews" class="page">
+      <h2>Avis clients</h2>
+      <blockquote>"Un accueil chaleureux et des prestations de qualité."</blockquote>
+      <blockquote>"Je recommande vivement cet institut !"</blockquote>
+      <blockquote>"Un vrai moment de détente à chaque visite."</blockquote>
+    </section>
+
+    <section id="contact" class="page">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Nom" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p id="confirmation" class="hidden">Merci pour votre message&nbsp;!</p>
+    </section>
+
+    <section id="faq" class="page">
+      <h2>FAQ</h2>
+      <p><strong>Comment prendre rendez-vous&nbsp;?</strong><br>Vous pouvez nous contacter par téléphone ou via le formulaire.</p>
+      <p><strong>Quels produits utilisez-vous&nbsp;?</strong><br>Nous sélectionnons des produits de qualité, respectueux de votre peau.</p>
+    </section>
+
+    <section id="legal" class="page">
+      <h2>Mentions légales</h2>
+      <p>Les informations recueillies sont traitées dans le respect du RGPD.</p>
+    </section>
+
+    <section id="social" class="page">
+      <h2>Réseaux sociaux</h2>
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button data-page="home">Accueil</button>
+    <button data-page="services">Prestations</button>
+    <button data-page="reviews">Avis</button>
+    <button data-page="contact">Contact</button>
+  </nav>
+
+  <script src="main.js"></script>
+</body>
+</html>
