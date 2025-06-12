@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App2Converter</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App2Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top-header"><h1>Accueil</h1></header>
+
+  <section id="home" class="page" data-title="Accueil">
+    <p>Bienvenue dans notre institut App2Converter&nbsp;!</p>
+    <img src="https://source.unsplash.com/featured/?salon,cozy" alt="Salon cosy">
+    <a href="#" class="button" data-link="services">Voir nos prestations</a>
+  </section>
+
+  <section id="services" class="page" data-title="Prestations" style="display:none">
+    <div class="service"><img src="https://source.unsplash.com/featured/?manicure" alt="Beauté des mains"><h3>Beauté des mains</h3><p>Soin complet - 30€</p></div>
+    <div class="service"><img src="https://source.unsplash.com/featured/?eye,beauty" alt="Beauté du regard"><h3>Beauté du regard</h3><p>Rehaussement - 40€</p></div>
+    <div class="service"><img src="https://source.unsplash.com/featured/?makeup" alt="Make-Up"><h3>Make-Up</h3><p>Maquillage pro - 50€</p></div>
+    <div class="service"><img src="https://source.unsplash.com/featured/?spa" alt="LPG"><h3>LPG</h3><p>Séance minceur - 35€</p></div>
+  </section>
+
+  <section id="about" class="page" data-title="À propos" style="display:none">
+    <p>Notre institut vous accueille dans un cadre chaleureux dédié à votre bien-être.</p>
+    <img src="https://source.unsplash.com/featured/?spa,relax" alt="Institut">
+  </section>
+
+  <section id="testimonials" class="page" data-title="Avis" style="display:none">
+    <div class="testimonial"><p class="text">"Un super moment détente, je recommande !"</p><p class="author">- Emma</p></div>
+    <div class="testimonial"><p class="text">"Professionnelles et à l'écoute."</p><p class="author">- Léa</p></div>
+    <div class="testimonial"><p class="text">"Résultat impeccable, j'adore !"</p><p class="author">- Sarah</p></div>
+  </section>
+
+  <section id="contact" class="page" data-title="Contact" style="display:none">
+    <form>
+      <label>Prénom<input type="text" required></label>
+      <label>Email<input type="email" required></label>
+      <label>Message<textarea required></textarea></label>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="socials">
+      <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+    </div>
+  </section>
+
+  <section id="faq" class="page" data-title="FAQ" style="display:none">
+    <div class="qa"><h3>Comment prendre rendez-vous ?</h3><p>Vous pouvez nous contacter par téléphone ou via le formulaire.</p></div>
+    <div class="qa"><h3>Quels moyens de paiement acceptez-vous ?</h3><p>Cartes bancaires et espèces.</p></div>
+  </section>
+
+  <section id="legal" class="page" data-title="Mentions légales" style="display:none">
+    <p>Les informations recueillies sont utilisées uniquement pour répondre à vos demandes. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles.</p>
+  </section>
+
+  <nav class="bottom-nav">
+    <a href="#" data-page="home">🏠</a>
+    <a href="#" data-page="services">💅</a>
+    <a href="#" data-page="testimonials">⭐</a>
+    <a href="#" data-page="contact">✉️</a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
 </html>

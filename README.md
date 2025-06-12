@@ -1,9 +1,10 @@
 # App2Converter
 
-Application fictive d'institut de beauté réalisée avec React et Vite. Elle comprend plusieurs pages et une navigation adaptée aux mobiles. Ce projet peut être converti en application mobile via Capacitor.
+Mini site fictif pour un institut de beauté. Tout le contenu tient dans un seul fichier HTML (avec une feuille de style et un script). Il suffit de l'ouvrir dans un navigateur ou de l'intégrer à un projet Capacitor pour le transformer en application mobile.
 
-## Scripts
+## Fichiers
+- `index.html` : structure de la page et des sections
+- `style.css` : styles simples (couleurs crème, beige et noir)
+- `script.js` : navigation entre les sections
 
-- `npm install` pour installer les dépendances
-- `npm run dev` pour lancer le serveur de développement
-- `npm run build` pour créer la version de production
+Aucune étape de build n'est requise.
